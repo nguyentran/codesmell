@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:41:51+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\AffiliationController.php">
+    <violation beginline="3" endline="2807" rule="ExcessiveClassLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasslength" class="AffiliationController" priority="3">
+      The class AffiliationController has 2805 lines of code. Current threshold is 1000. Avoid really long classes.
+    </violation>
+    <violation beginline="3" endline="2807" rule="TooManyMethods" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanymethods" class="AffiliationController" priority="3">
+      The class AffiliationController has 44 non-getter- and setter-methods. Consider refactoring AffiliationController to keep number of methods under 25.
+    </violation>
+    <violation beginline="3" endline="2807" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="AffiliationController" priority="3">
+      The class AffiliationController has an overall complexity of 328 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="37" endline="92" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="search" priority="1">
+      The variable $data_list is not named in camelCase.
+    </violation>
+    <violation beginline="37" endline="92" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="search" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="37" endline="92" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="search" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="37" endline="92" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="search" priority="1">
+      The variable $data_list is not named in camelCase.
+    </violation>
+    <violation beginline="71" endline="71" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$param'.
+    </violation>
+    <violation beginline="139" endline="306" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="setSearchConditions" priority="3">
+      The method setSearchConditions() has a Cyclomatic Complexity of 21. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="139" endline="306" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="setSearchConditions" priority="3">
+      The method setSearchConditions() has an NPath complexity of 196608. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="139" endline="306" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="setSearchConditions" priority="3">
+      The method setSearchConditions() has 168 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="313" endline="419" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="setSearchJoin" priority="3">
+      The method setSearchJoin() has 107 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $address_array is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $target_areas_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $address_array is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $target_areas_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $target_areas_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $genre_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $target_areas_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $genre_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $target_areas_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $genre_str is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $genre_joins is not named in camelCase.
+    </violation>
+    <violation beginline="313" endline="419" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="setSearchJoin" priority="1">
+      The variable $genre_joins is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="detail" priority="3">
+      The method detail() has a Cyclomatic Complexity of 20. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="426" endline="574" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="detail" priority="3">
+      The method detail() has an NPath complexity of 1362. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="426" endline="574" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="detail" priority="3">
+      The method detail() has 149 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $last_affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $last_affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $history_data is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $history_data is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="574" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="detail" priority="1">
+      The variable $history_data is not named in camelCase.
+    </violation>
+    <violation beginline="426" endline="426" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="581" endline="962" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="category" priority="3">
+      The method category() has a Cyclomatic Complexity of 43. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="581" endline="962" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="category" priority="3">
+      The method category() has an NPath complexity of 1798464. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="581" endline="962" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="category" priority="3">
+      The method category() has 382 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_chk_flg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_chk_flg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_msg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_chk_flg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_msg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_chk_flg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $error_msg is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="962" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="category" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="581" endline="581" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="619" endline="619" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$newFlg'.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="genre" priority="3">
+      The method genre() has a Cyclomatic Complexity of 21. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="970" endline="1098" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="genre" priority="3">
+      The method genre() has an NPath complexity of 352. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="970" endline="1098" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="genre" priority="3">
+      The method genre() has 129 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $work_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $all_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $work_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $work_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $genre_id is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $genre_id is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $all_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $work_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $all_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $all_category is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $mediation_genre is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="1098" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="genre" priority="1">
+      The variable $mediation_genre is not named in camelCase.
+    </violation>
+    <violation beginline="970" endline="970" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1047" endline="1047" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$key'.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="corptargetarea" priority="3">
+      The method corptargetarea() has a Cyclomatic Complexity of 17. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="corptargetarea" priority="3">
+      The method corptargetarea() has an NPath complexity of 308. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="corptargetarea" priority="3">
+      The method corptargetarea() has 146 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The parameter $init_pref is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $select_genre_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $genre_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $select_genre_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $row_data is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $row_data is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $genre_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $genre_list is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $init_pref is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $last_modified is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1250" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="corptargetarea" priority="1">
+      The variable $last_modified is not named in camelCase.
+    </violation>
+    <violation beginline="1105" endline="1105" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1144" endline="1144" rule="DevelopmentCodeFragment" ruleset="Design Rules" externalInfoUrl="http://phpmd.org/rules/design.html#developmentcodefragment" priority="2">
+      The method AffiliationController::corptargetarea() calls the typical debug function var_dump() which is mostly only used during development.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="targetarea" priority="3">
+      The method targetarea() has a Cyclomatic Complexity of 16. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="targetarea" priority="3">
+      The method targetarea() has an NPath complexity of 210. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AffiliationController" method="targetarea" priority="3">
+      The method targetarea() has 109 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $corp_count is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $pref_list is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $last_modified is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1366" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="targetarea" priority="1">
+      The variable $last_modified is not named in camelCase.
+    </violation>
+    <violation beginline="1258" endline="1258" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $return_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $return_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $para_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $para_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $para_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $para_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $para_data is not named in camelCase.
+    </violation>
+    <violation beginline="1372" endline="1397" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="cancel" priority="1">
+      The variable $return_data is not named in camelCase.
+    </violation>
+    <violation beginline="1404" endline="1438" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="history_input" priority="1">
+      The method history_input is not named in camelCase.
+    </violation>
+    <violation beginline="1404" endline="1438" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="history_input" priority="1">
+      The variable $history_data is not named in camelCase.
+    </violation>
+    <violation beginline="1404" endline="1438" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="history_input" priority="1">
+      The variable $history_data is not named in camelCase.
+    </violation>
+    <violation beginline="1404" endline="1404" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1447" endline="1459" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__check_modified_category" priority="1">
+      The method __check_modified_category is not named in camelCase.
+    </violation>
+    <violation beginline="1447" endline="1447" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1468" endline="1478" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__check_modified_mcorp" priority="1">
+      The method __check_modified_mcorp is not named in camelCase.
+    </violation>
+    <violation beginline="1468" endline="1468" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1486" endline="1514" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_data" priority="1">
+      The method __get_m_corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="1486" endline="1486" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1521" endline="1565" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_subs_list" priority="1">
+      The method __get_m_corp_subs_list is not named in camelCase.
+    </violation>
+    <violation beginline="1521" endline="1565" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_subs_list" priority="1">
+      The variable $get_data is not named in camelCase.
+    </violation>
+    <violation beginline="1521" endline="1565" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_subs_list" priority="1">
+      The variable $development_response is not named in camelCase.
+    </violation>
+    <violation beginline="1521" endline="1565" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_subs_list" priority="1">
+      The variable $development_response is not named in camelCase.
+    </violation>
+    <violation beginline="1521" endline="1565" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_m_corp_subs_list" priority="1">
+      The variable $development_response is not named in camelCase.
+    </violation>
+    <violation beginline="1521" endline="1521" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1546" endline="1546" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$get_data'.
+    </violation>
+    <violation beginline="1572" endline="1607" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_subs_list" priority="1">
+      The method __get_affiliation_subs_list is not named in camelCase.
+    </violation>
+    <violation beginline="1572" endline="1607" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_subs_list" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="1572" endline="1607" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_subs_list" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="1572" endline="1607" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_subs_list" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="1572" endline="1572" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1614" endline="1650" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_stop_category_list" priority="1">
+      The method __get_stop_category_list is not named in camelCase.
+    </violation>
+    <violation beginline="1614" endline="1614" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1657" endline="1682" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_stats_list" priority="1">
+      The method __get_affiliation_stats_list is not named in camelCase.
+    </violation>
+    <violation beginline="1657" endline="1657" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1690" endline="1699" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__set_affiliation_correspond" priority="1">
+      The method __set_affiliation_correspond is not named in camelCase.
+    </violation>
+    <violation beginline="1707" endline="1716" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_affiliation_correspond" priority="1">
+      The method __get_affiliation_correspond is not named in camelCase.
+    </violation>
+    <violation beginline="1725" endline="1732" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__check_modified_affiliation_correspond" priority="1">
+      The method __check_modified_affiliation_correspond is not named in camelCase.
+    </violation>
+    <violation beginline="1725" endline="1725" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The method __edit_history is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1752" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_history" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1741" endline="1741" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1763" endline="1811" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp" priority="1">
+      The method __edit_corp is not named in camelCase.
+    </violation>
+    <violation beginline="1763" endline="1811" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp" priority="1">
+      The parameter $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="1763" endline="1811" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1763" endline="1811" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1763" endline="1811" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp" priority="1">
+      The variable $last_id is not named in camelCase.
+    </violation>
+    <violation beginline="1763" endline="1763" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="__edit_corp_subs" priority="3">
+      The method __edit_corp_subs() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="__edit_corp_subs" priority="3">
+      The method __edit_corp_subs() has an NPath complexity of 243. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_subs" priority="1">
+      The method __edit_corp_subs is not named in camelCase.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1819" endline="1878" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1819" endline="1819" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The method __edit_affiliation is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The parameter $last_affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1928" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation" priority="1">
+      The variable $last_affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="1887" endline="1887" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1936" endline="1973" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation_subs" priority="1">
+      The method __edit_affiliation_subs is not named in camelCase.
+    </violation>
+    <violation beginline="1936" endline="1973" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1936" endline="1973" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1936" endline="1973" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_affiliation_subs" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="1936" endline="1936" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="1982" endline="1995" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__regist_history" priority="1">
+      The method __regist_history is not named in camelCase.
+    </violation>
+    <violation beginline="1982" endline="1982" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2003" endline="2044" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__delete_corp" priority="1">
+      The method __delete_corp is not named in camelCase.
+    </violation>
+    <violation beginline="2003" endline="2044" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__delete_corp" priority="1">
+      The parameter $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="2003" endline="2044" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__delete_corp" priority="1">
+      The parameter $affiliation_id is not named in camelCase.
+    </violation>
+    <violation beginline="2003" endline="2044" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__delete_corp" priority="1">
+      The variable $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="2003" endline="2003" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$affiliation_id'.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The method __edit_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The variable $category_error is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The variable $category_error is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2082" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2052" endline="2052" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2092" endline="2105" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_check" priority="1">
+      The method __edit_corp_category_check is not named in camelCase.
+    </violation>
+    <violation beginline="2092" endline="2105" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_check" priority="1">
+      The parameter $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="2092" endline="2105" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_check" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="2113" endline="2129" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__input_after_display" priority="1">
+      The method __input_after_display is not named in camelCase.
+    </violation>
+    <violation beginline="2113" endline="2129" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__input_after_display" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="2113" endline="2129" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__input_after_display" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="2113" endline="2129" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__input_after_display" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="2113" endline="2129" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__input_after_display" priority="1">
+      The variable $stop_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatemethod" class="AffiliationController" method="__edit_target_area" priority="3">
+      Avoid unused private methods such as '__edit_target_area'.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The method __edit_target_area is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $m_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $m_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $m_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $m_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $m_corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $corp_category is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2190" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2137" endline="2137" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2138" endline="2138" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$resultsFlg'.
+    </violation>
+    <violation beginline="2157" endline="2157" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$result'.
+    </violation>
+    <violation beginline="2195" endline="2198" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__set_parameter_session" priority="1">
+      The method __set_parameter_session is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="__getDataCsv" priority="3">
+      The method __getDataCsv() has a Cyclomatic Complexity of 17. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="__getDataCsv" priority="3">
+      The method __getDataCsv() has an NPath complexity of 32769. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The method __getDataCsv is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_affiliation_info is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_holiday is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_development_response is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_stop_category_name is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_category_name is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_affiliation_info is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_category_name is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_holiday is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_development_response is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $fields_stop_category_name is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $free_estimate_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $portalsite_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $reg_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $coordination_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $prog_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $bill_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $collection_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $liability_insurance_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $waste_collect_oath_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $claim_count_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $corp_commission_status_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $free_estimate_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $portalsite_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $reg_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $coordination_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $prog_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $bill_send_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $collection_method_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $liability_insurance_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $waste_collect_oath_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $claim_count_list is not named in camelCase.
+    </violation>
+    <violation beginline="2206" endline="2275" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__getDataCsv" priority="1">
+      The variable $corp_commission_status_list is not named in camelCase.
+    </violation>
+    <violation beginline="2215" endline="2215" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $fields_affiliation_info. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2219" endline="2219" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $fields_development_response. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2221" endline="2221" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $fields_stop_category_name. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2238" endline="2238" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $coordination_method_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2239" endline="2239" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $prog_send_method_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2240" endline="2240" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $bill_send_method_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2241" endline="2241" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $collection_method_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2242" endline="2242" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $liability_insurance_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2243" endline="2243" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $waste_collect_oath_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2246" endline="2246" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $corp_commission_status_list. Keep variable name length under 20.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="__edit_corp_category_genre" priority="3">
+      The method __edit_corp_category_genre() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="__edit_corp_category_genre" priority="3">
+      The method __edit_corp_category_genre() has an NPath complexity of 272. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The method __edit_corp_category_genre is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $category_error is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $category_error is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2361" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_corp_category_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2287" endline="2287" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AffiliationController" method="__edit_target_area_genre" priority="3">
+      The method __edit_target_area_genre() has a Cyclomatic Complexity of 13. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AffiliationController" method="__edit_target_area_genre" priority="3">
+      The method __edit_target_area_genre() has an NPath complexity of 540. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The method __edit_target_area_genre is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $chk_mcc_id is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $del_mcc_id_array is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2444" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2369" endline="2369" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2370" endline="2370" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$resultsFlg'.
+    </violation>
+    <violation beginline="2403" endline="2403" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$result'.
+    </violation>
+    <violation beginline="2456" endline="2475" rule="UnusedPrivateMethod" ruleset="Unused Code Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedprivatemethod" class="AffiliationController" method="__get_target_area_list" priority="3">
+      Avoid unused private methods such as '__get_target_area_list'.
+    </violation>
+    <violation beginline="2456" endline="2475" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__get_target_area_list" priority="1">
+      The method __get_target_area_list is not named in camelCase.
+    </violation>
+    <violation beginline="2456" endline="2456" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The method __edit_target_area2 is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2540" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2484" endline="2484" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2516" endline="2516" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$resultsFlg'.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The method __edit_target_area_to_genre is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $id_list is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $area_count is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $corp_areas is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area_to_genre" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2548" endline="2548" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2561" endline="2561" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$key'.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The method __all_regist_target_area is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The variable $regist_already_data is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The variable $regist_already_data is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2640" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2591" endline="2591" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2649" endline="2677" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_remove_target_area" priority="1">
+      The method __all_remove_target_area is not named in camelCase.
+    </violation>
+    <violation beginline="2649" endline="2677" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_remove_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2649" endline="2677" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_remove_target_area" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2649" endline="2649" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2664" endline="2664" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$resultsFlg'.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The method __edit_target_area3 is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $conditions_results is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $set_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2745" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__edit_target_area3" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2691" endline="2691" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+    <violation beginline="2722" endline="2722" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$resultsFlg'.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The method __all_regist_target_area2 is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The variable $regist_already_data is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The variable $regist_already_data is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2802" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AffiliationController" method="__all_regist_target_area2" priority="1">
+      The variable $save_data is not named in camelCase.
+    </violation>
+    <violation beginline="2752" endline="2752" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $id. Configured minimum length is 3.
+    </violation>
+  </file>
+</pmd>

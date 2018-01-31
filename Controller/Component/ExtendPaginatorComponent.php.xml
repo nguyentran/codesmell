@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:43:50+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\ExtendPaginatorComponent.php">
+    <violation beginline="66" endline="66" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$key'.
+    </violation>
+  </file>
+</pmd>

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:42:15+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\AuctionInfoUtilComponent.php">
+    <violation beginline="3" endline="686" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="AuctionInfoUtilComponent" priority="3">
+      The class AuctionInfoUtilComponent has an overall complexity of 111 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="3" endline="686" rule="CouplingBetweenObjects" ruleset="Design Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/design.html#couplingbetweenobjects" class="AuctionInfoUtilComponent" priority="2">
+      The class AuctionInfoUtilComponent has a coupling between objects value of 14. Consider to reduce the number of dependencies under 13.
+    </violation>
+    <violation beginline="48" endline="136" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="3">
+      The method get_auctionInfo_for_autoCommission() has a Cyclomatic Complexity of 28. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="48" endline="136" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="3">
+      The method get_auctionInfo_for_autoCommission() has an NPath complexity of 31680. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The method get_auctionInfo_for_autoCommission is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The parameter $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $visit_time_list is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $visit_time_list is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $visit_time_list is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $visit_time_list is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $visit_time_list is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $judge_result is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $preferred_date is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $auto_commissions is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $auto_commissions is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $auto_commissions is not named in camelCase.
+    </violation>
+    <violation beginline="48" endline="136" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="get_auctionInfo_for_autoCommission" priority="1">
+      The variable $auto_commissions is not named in camelCase.
+    </violation>
+    <violation beginline="113" endline="113" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $a. Configured minimum length is 3.
+    </violation>
+    <violation beginline="113" endline="113" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $b. Configured minimum length is 3.
+    </violation>
+    <violation beginline="146" endline="530" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="3">
+      The method update_auction_infos() has a Cyclomatic Complexity of 57. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="146" endline="530" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="3">
+      The method update_auction_infos() has an NPath complexity of 2414671. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="146" endline="530" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="3">
+      The method update_auction_infos() has 385 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The method update_auction_infos is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The parameter $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The parameter $auto_selection is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_selection is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call_flag is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $credit_helper is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $result_credit is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $result_credit is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $credit_helper is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $result_credit is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $mc_category_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $mc_category_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $mc_category_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $mc_category_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $mc_category_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $target_commission_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $target_commission_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $target_commission_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $target_commission_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call_flag is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call_flag is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_status_flg is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_refusal_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $before_list is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_refusal_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_selection is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_refusal_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_selection is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="146" endline="530" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="update_auction_infos" priority="1">
+      The variable $auto_auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="303" endline="303" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $i. Configured minimum length is 3.
+    </violation>
+    <violation beginline="350" endline="350" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $target_commission_data. Keep variable name length under 20.
+    </violation>
+    <violation beginline="539" endline="597" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="3">
+      The method __carry_auction_push_time() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The method __carry_auction_push_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The parameter $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The parameter $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The parameter $auto_call_interval is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time_sort is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time_sort is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time_sort is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time_sort is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time_sort is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $highest_empty_rank is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $highest_empty_rank is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $highest_empty_rank is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $highest_empty_rank is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auction_data is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $rank_time is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $highest_empty_rank is not named in camelCase.
+    </violation>
+    <violation beginline="539" endline="597" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__carry_auction_push_time" priority="1">
+      The variable $auto_call_interval is not named in camelCase.
+    </violation>
+    <violation beginline="560" endline="560" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $v. Configured minimum length is 3.
+    </violation>
+    <violation beginline="564" endline="564" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $a. Configured minimum length is 3.
+    </violation>
+    <violation beginline="564" endline="564" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $b. Configured minimum length is 3.
+    </violation>
+    <violation beginline="605" endline="612" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__check_agreement_and_license" priority="1">
+      The method __check_agreement_and_license is not named in camelCase.
+    </violation>
+    <violation beginline="605" endline="612" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__check_agreement_and_license" priority="1">
+      The parameter $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="605" endline="612" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__check_agreement_and_license" priority="1">
+      The parameter $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="605" endline="612" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__check_agreement_and_license" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="605" endline="612" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__check_agreement_and_license" priority="1">
+      The variable $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="620" endline="634" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_fee_data_m_categories" priority="1">
+      The method __get_fee_data_m_categories is not named in camelCase.
+    </violation>
+    <violation beginline="620" endline="634" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_fee_data_m_categories" priority="1">
+      The parameter $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="620" endline="634" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_fee_data_m_categories" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="620" endline="634" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_fee_data_m_categories" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="642" endline="650" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_auto_call_flag_m_genre" priority="1">
+      The method __get_auto_call_flag_m_genre is not named in camelCase.
+    </violation>
+    <violation beginline="642" endline="650" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_auto_call_flag_m_genre" priority="1">
+      The parameter $genre_id is not named in camelCase.
+    </violation>
+    <violation beginline="642" endline="650" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="__get_auto_call_flag_m_genre" priority="1">
+      The variable $genre_id is not named in camelCase.
+    </violation>
+    <violation beginline="657" endline="667" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_is_auto_callable" priority="1">
+      The method _is_auto_callable is not named in camelCase.
+    </violation>
+    <violation beginline="673" endline="683" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_get_auto_call_interval" priority="1">
+      The method _get_auto_call_interval is not named in camelCase.
+    </violation>
+    <violation beginline="673" endline="683" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_get_auto_call_interval" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="673" endline="683" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_get_auto_call_interval" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="673" endline="683" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_get_auto_call_interval" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+    <violation beginline="673" endline="683" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AuctionInfoUtilComponent" method="_get_auto_call_interval" priority="1">
+      The variable $auto_call is not named in camelCase.
+    </violation>
+  </file>
+</pmd>

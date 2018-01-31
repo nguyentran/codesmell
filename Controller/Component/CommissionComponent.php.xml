@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:42:52+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\CommissionComponent.php">
+    <violation beginline="18" endline="311" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="CommissionComponent" method="GetCorpList" priority="3">
+      The method GetCorpList() has a Cyclomatic Complexity of 17. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="18" endline="311" rule="NPathComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="CommissionComponent" method="GetCorpList" priority="3">
+      The method GetCorpList() has an NPath complexity of 2080. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="18" endline="311" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="CommissionComponent" method="GetCorpList" priority="3">
+      The method GetCorpList() has 294 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The method GetCorpList is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The parameter $flash_error is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $fields_holiday is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $fields_commission_unit_price is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $fields_holiday is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $fields_commission_unit_price is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_check_flg is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $joins_type is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_check_flg is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $joins_type is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $flash_error is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $joins_type is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_check_flg is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_areas_joins is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_areas_joins is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $stat_joins is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $stat_joins is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $target_check_flg is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="18" endline="311" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CommissionComponent" method="GetCorpList" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="27" endline="27" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $fields_commission_unit_price. Keep variable name length under 20.
+    </violation>
+  </file>
+</pmd>

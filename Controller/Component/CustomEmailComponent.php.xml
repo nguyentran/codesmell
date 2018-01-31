@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:43:13+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\CustomEmailComponent.php">
+    <violation beginline="10" endline="41" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The parameter $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The parameter $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The parameter $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The parameter $from_name is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="10" endline="41" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="send" priority="1">
+      The variable $from_name is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="70" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="simple_send" priority="1">
+      The method simple_send is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="70" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="simple_send" priority="1">
+      The parameter $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="70" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="simple_send" priority="1">
+      The parameter $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="70" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="simple_send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="70" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="simple_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The method bcc_send is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The parameter $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The parameter $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The parameter $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The parameter $from_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The parameter $bcc_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $bcc_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $from_name is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="87" endline="126" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_send" priority="1">
+      The variable $bcc_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The method bcc_simple_send is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The parameter $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The parameter $from_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The parameter $bcc_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The variable $to_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The variable $bcc_mail is not named in camelCase.
+    </violation>
+    <violation beginline="137" endline="157" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="CustomEmailComponent" method="bcc_simple_send" priority="1">
+      The variable $from_mail is not named in camelCase.
+    </violation>
+  </file>
+</pmd>

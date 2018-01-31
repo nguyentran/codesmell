@@ -1,0 +1,751 @@
+<?php
+class GeneralSearch extends AppModel
+{
+	public $name = 'GeneralSearch';
+	public $useTable = false;
+	
+	//機能名
+	const FUNCTION_CASE_MANAGEMENT  = "0";
+	const FUNCTION_AGENCY_MANAGEMENT = "1";
+	const FUNCTION_CHARGE_MANAGEMENT = "2";
+	const FUNCTION_MEMBER_MANAGEMENT = "3";
+		
+	//関係モデル
+	private $_m_general_search;
+	private $_general_search_item;
+	private $_general_search_condition;
+	private $_general_search_history;
+	private $_m_site;
+	private $_m_commission_type;
+	private $_m_genre;
+	private $_m_category;
+	private $_m_item;
+	private $_m_user;
+	private $_m_address1;
+	//変換用のリスト
+	private $_m_site_list;
+	private $_m_commission_type_list;
+	private $_m_genre_list;
+	private $_m_category_list;
+	private $_m_item_wcontents_list;
+	private $_m_item_jbr_category_list;
+	private $_m_item_jbr_estimate_list;
+	private $_m_item_jbr_receipt_list;
+	private $_m_user_list;
+	private $_m_user_list2;
+	private $_m_address1_list;
+	private $_m_item_bill_status_list;
+	private $_m_item_bill_send_method_list;
+	private $_m_item_coordination_method_list;
+	private $_m_item_prog_send_method_list;
+	private $_m_item_advertising_status_list;
+	private $_m_item_payment_site_list;
+	private $_m_item_demand_status_list;
+	private $_m_item_demand_order_fail_reason_list;
+	private $_m_item_commission_status_list;
+	private $_m_item_commission_order_fail_reason_list;
+	
+	/*
+	 * 機能IDと機能名のリスト
+	 */
+	private $_function_list = array( array('value' => '0', 'name' => '案件管理'), array('value' => '1', 'name' => '取次管理'), array('value' => '2', 'name' => '請求管理'), array('value' => '3', 'name' => '加盟店管理'));
+	
+	private $_function_security_list = array('', '', array('system', 'accounting'), '');
+	/*
+	 * ファイル名
+	 */
+	private $_csv_file_id = "総合検索";
+	
+	/*
+	 * 機能毎のテーブル名
+	 */
+	private $_function_tables = array(
+		array('demand_infos' => array(
+									'id', 'follow_date', 'demand_status', 'order_fail_reason', 
+									'mail_demand', 'nighttime_takeover', 'low_accuracy', 'remand',
+									'immediately', 'corp_change', 'receive_datetime', 'site_id', 'genre_id',
+									'category_id', 'cross_sell_source_site', 'cross_sell_source_genre', 'cross_sell_source_category',
+				                    'receptionist', 'customer_name', 'customer_tel', 'customer_mailaddress',
+									'postcode', 'address1', 'address2', 'address3', 'address4', 'building',
+									'room', 'tel1', 'tel2', 'contents', 'contact_desired_time', 'jbr_order_no',
+									'jbr_work_contents', 'jbr_category', 'mail', 'order_date', 'complete_date',
+									'order_fail_date', 'jbr_estimate_status', 'jbr_receipt_status', 'development_request',
+									'share_notice', 'del_flg', 'riro_kureka',
+									'modified_user_id', 'modified', 'created_user_id', 'created', 'order_no_marriage'		
+								), 
+/*			
+			  'demand_corresponds' => array(
+							  		'id', 'demand_id', 'correspond_datetime', 'responders', 'corresponding_contens'						
+								)
+*/
+		),
+		array('commission_infos' => array(
+									'id', 'demand_id', 'corp_id', 'commit_flg', 'commission_type', 'lost_flg', 'appointers', 
+									'first_commission', 'corp_fee', 'waste_collect_oath', 'attention', 'commission_dial',
+									'tel_commission_datetime', 'tel_commission_person', 'commission_fee_rate', 'commission_note_send_datetime',
+									'commission_note_sender', 'commission_status', 'commission_order_fail_reason', 'complete_date', 'order_fail_date',
+									'estimate_price_tax_exclude', 'construction_price_tax_exclude', 'construction_price_tax_include',
+									'deduction_tax_include', 'deduction_tax_exclude', 'confirmd_fee_rate', 'unit_price_calc_exclude',
+									'report_note', 'del_flg', 'checked_flg', 'irregular_fee_rate', 'irregular_fee', 'falsity', 'follow_date',
+									'introduction_not', 'lock_status', 'commission_status_last_updated', 'progress_reported', 'progress_report_datetime',
+									'modified_user_id', 'modified', 'created_user_id', 'created'
+								)
+		),
+		array('bill_infos' => array(
+									'id', 'demand_id', 'bill_status', 'irregular_fee_rate', 'irregular_fee', 'deduction_tax_include',
+									'deduction_tax_exclude', 'indivisual_billing', 'comfirmed_fee_rate', 'fee_target_price', 'fee_tax_exclude',
+									'tax', 'insurance_price', 'total_bill_price', 'fee_billing_date', 'fee_payment_date', 'fee_payment_price',
+									'fee_payment_balance', 'report_note', 'commission_id',
+									'modified_user_id', 'modified', 'created_user_id', 'created'
+								),
+		),
+		array('m_corps' => array(
+									'id', 'corp_name', 'corp_name_kana', 'official_corp_name', 'affiliation_status', 'responsibility', 'postcode',
+									'address1', 'address2', 'address3', 'address4', 'building', 'room', 'trade_name1', 'trade_name2', 'commission_dial',
+									'tel1', 'tel2', 'mobile_tel', 'fax', 'mailaddress_pc', 'mailaddress_mobile', 'url', 'target_range', 'available_time',
+									'support24hour', 'contactable_time', 'free_estimate', 'portalsite', 'reg_send_date', 'reg_collect_date', 'ps_app_send_date',
+									'ps_app_collect_date', 'coordination_method', 'prog_send_method', 'prog_send_address', 'prog_irregular', 'bill_send_method',
+									'bill_send_address', 'bill_irregular', 'special_agreement', 'contract_date', 'order_fail_date', 'commission_ng_date', 'note',
+									'document_send_request_date', 'follow_person', 'advertising_status', 'advertising_send_date',
+									'progress_check_tel', 'progress_check_person', 'payment_site', 'del_flg', 'rits_person'
+											
+								),	
+			  'affiliation_infos' => array(
+			  						'id', 'corp_id', 'employees', 'max_commission', 'collection_method', 'collection_method_others', 'liability_insurance',
+			  						'reg_follow_date1', 'reg_follow_date2', 'reg_follow_date3', 'waste_collect_oath', 'transfer_name', 'claim_count',
+			  						'claim_history', 'commission_count', 'weekly_commission_count', 'orders_count', 'orders_rate',
+			  						'construction_cost', 'fee', 'bill_price', 'payment_price', 'balance', 'construction_unit_price', 'commission_unit_price',
+			  						'sf_construction_unit_price', 'sf_construction_count', 'reg_info', 'reg_pdf_path', 'attention',
+			  						'corp_id',
+							  		'modified_user_id', 'modified', 'created_user_id', 'created'
+								),
+			  'm_corp_categories' => array(
+									'genre_id', 'category_id', 'order_fee', 'order_fee_unit', 'introduce_fee', 'introduce_fee_unit', 'note',
+							  		'modified_user_id', 'modified', 'created_user_id', 'created'
+								),
+			  'm_target_areas' => array(
+									'jis_cd', 'address1_cd'
+								)
+		)
+	);
+	
+	/*
+	 * カラム毎の表示制限
+	 */
+	private $_security_table_column = array(
+		'bill_infos_id' => array('system', 'accounting'),
+		'bill_infos_id' => array('system', 'accounting'), 
+		'bill_infos_demand_id' => array('system', 'accounting'), 
+		'bill_infos_bill_status' => array('system', 'accounting'), 
+		'bill_infos_irregular_fee_rate' => array('system', 'accounting'), 
+		'bill_infos_irregular_fee' => array('system', 'accounting'), 
+		'bill_infos_deduction_tax_include' => array('system', 'accounting'),
+		'bill_infos_deduction_tax_exclude' => array('system', 'accounting'), 
+		'bill_infos_indivisual_billing' => array('system', 'accounting'), 
+		'bill_infos_comfirmed_fee_rate' => array('system', 'accounting'), 
+		'bill_infos_fee_target_price' => array('system', 'accounting'), 
+		'bill_infos_fee_tax_exclude' => array('system', 'accounting'),
+		'bill_infos_tax' => array('system', 'accounting'), 
+		'bill_infos_insurance_price' => array('system', 'accounting'), 
+		'bill_infos_total_bill_price' => array('system', 'accounting'),  
+		'bill_infos_fee_billing_date' => array('system', 'accounting'), 
+		'bill_infos_fee_payment_date' => array('system', 'accounting'), 
+		'bill_infos_fee_payment_price' => array('system', 'accounting'),
+		'bill_infos_fee_payment_balance' => array('system', 'accounting'), 
+		'bill_infos_report_note' => array('system', 'accounting'), 
+		'bill_infos_commission_id' => array('system', 'accounting'),
+		'bill_infos_modified_user_id' => array('system', 'accounting'), 
+		'bill_infos_modified' => array('system', 'accounting'), 
+		'bill_infos_created_user_id' => array('system', 'accounting'), 
+		'bill_infos_created' => array('system', 'accounting')
+	);
+	
+	/*
+	 * 機能毎の項目変換テーブル
+	 */
+	private $_transfer_reference_table = array(
+		'demand_infos_demand_status' => array('v' => '_m_item_demand_status_list'),
+		'demand_infos_order_fail_reason' => array('v' => '_m_item_demand_order_fail_reason_list'),
+		'demand_infos_site_id' => array('v' => '_m_site_list'), 
+		'demand_infos_genre_id' => array('v' => '_m_genre_list'), 
+		'demand_infos_receptionist' => array('v' => '_m_user_list'),
+		'demand_infos_category_id' => array('v' => '_m_category_list'),
+		'demand_infos_cross_sell_source_site' => array('v' => '_m_site_list'),
+		'demand_infos_cross_sell_source_genre' => array('v' => '_m_genre_list'),
+		'demand_infos_cross_sell_source_category' => array('v' => '_m_category_list'),
+		'demand_infos_jbr_work_contents' => array('v' => '_m_item_wcontents_list'),
+	    'demand_infos_jbr_category' => array('v' => '_m_item_jbr_category_list'),
+		'demand_infos_jbr_estimate_status' => array('v' => '_m_item_jbr_estimate_list'),
+		'demand_infos_jbr_receipt_status' => array('v' => '_m_item_jbr_receipt_list'),
+		'demand_corresponds_responders' => array('v' => '_m_user_list'), 
+		'demand_infos_modified_user_id' => array('v' => '_m_user_list2'),
+		'demand_infos_created_user_id' => array('v' => '_m_user_list2'),
+		'commission_infos_commission_type' => array('v' => '_m_commission_type_list'),
+		'commission_infos_appointers' => array('v' => '_m_user_list'),
+		'commission_infos_tel_commission_person' => array('v' => '_m_user_list'),
+		'commission_infos_commission_note_sender' => array('v' => '_m_user_list'),
+		'commission_infos_commission_status' => array('v' => '_m_item_commission_status_list'),
+		'commission_infos_commission_order_fail_reason' => array('v' => '_m_item_commission_order_fail_reason_list'),
+		'commission_infos_modified_user_id' => array('v' => '_m_user_list2'),
+		'commission_infos_created_user_id' => array('v' => '_m_user_list2'),
+		'bill_infos_bill_status' => array('v' => '_m_item_bill_status_list'),
+		'bill_infos_modified_user_id' => array('v' => '_m_user_list2'),
+		'bill_infos_created_user_id' => array('v' => '_m_user_list2'),		
+		'm_corps_address1' => array('v' => '_m_address1_list'),
+		'm_corps_coordination_method' => array('v' => '_m_item_coordination_method_list'),
+		'm_corps_prog_send_method' => array('v' => '_m_item_prog_send_method_list'),
+		'm_corps_bill_send_method' => array('v' => '_m_item_bill_send_method_list'),
+		'm_corps_follow_person' => array('v' => '_m_user_list'),
+		'm_corps_advertising_status' => array('v' => '_m_item_advertising_status_list'),
+		'm_corps_payment_site' => array('v' => '_m_item_payment_site_list'),
+		'm_corps_rits_person' => array('v' => '_m_user_list'),
+		'affiliation_infos_modified_user_id' => array('v' => '_m_user_list2'),
+		'affiliation_infos_created_user_id' => array('v' => '_m_user_list2'),
+		'm_corp_categories_genre_id' => array('v' => '_m_genre_list'),
+		'm_corp_categories_category_id' => array('v' => '_m_category_list'),
+		'm_corp_categories_modified_user_id' => array('v' => '_m_user_list2'),
+		'm_corp_categories_created_user_id' => array('v' => '_m_user_list2'),
+	);
+	
+	
+	/*
+	 * 機能毎の検索用JOIN TABLE
+	 */
+	/*
+	private $_function_tables_join_order = array(
+		'demand_infos', 'demand_corresponds', 'commission_infos', 'bill_infos', 'm_corps', 'affiliation_infos', 'm_corp_categories', 'm_target_areas'
+	);
+	*/
+	
+	private $_function_tables_join_order = array(
+			'demand_infos', 'commission_infos', 'bill_infos', 'm_corps', 'affiliation_infos', 'm_corp_categories', 'm_target_areas'
+	);
+	private $_function_tables_join_rule = array(
+		'demand_infos' => array('cond' => null),
+/*
+		'demand_corresponds' => array(
+			'cond' => 'demand_infos.id = demand_corresponds.demand_id'
+		),
+*/
+		'commission_infos' => array(
+			'cond' => 'demand_infos.id = commission_infos.demand_id'
+		),
+		'bill_infos' => array(
+			'cond' => 'demand_infos.id = bill_infos.demand_id and commission_infos.id = bill_infos.commission_id'
+		),
+		'm_corps' => array(
+			'cond' => 'commission_infos.corp_id = m_corps.id'
+		),
+		'affiliation_infos' => array(
+			'cond' => 'm_corps.id = affiliation_infos.corp_id'
+		),
+		'm_corp_categories' => array(
+			'cond' => 'm_corps.id = m_corp_categories.corp_id'
+		),
+		'm_target_areas' => array(
+			'cond' => 'm_corp_categories.id = m_target_areas.corp_category_id'
+		)
+	);
+	
+	/*
+	 * CSV用タイトル
+	 */
+	public $csvFormat = array(
+			'default' => array());
+	
+	public function __construct() {
+		App::import('Model', 'MGeneralSearch');
+		App::import('Model', 'MCommissionType');
+		App::import('Model', 'GeneralSearchItem');
+		App::import('Model', 'GeneralSearchCondition');
+		App::import('Model', 'GeneralSearchHistory');
+		App::import('Model', 'MSite');
+		App::import('Model', 'MUser');
+		App::import('Model', 'MAddress1');
+		
+		$this->_m_general_search = new MGeneralSearch();
+		$this->_general_search_item = new GeneralSearchItem();
+		$this->_general_search_condition = new GeneralSearchCondition();
+		$this->_general_search_history = new GeneralSearchHistory();
+		$this->_m_site = new MSite();
+		$this->_m_commission_type = new MCommissionType();
+		$this->_m_user = new MUser();
+		$this->_m_address1 = new MAddress1();
+		
+		$this->_m_site_list = $this->_m_site->getList();
+		$this->_m_address1_list = $this->_m_address1->getList();
+		$this->_m_genre_list = Util::getDropListGenre();
+		$this->_m_commission_type_list = $this->_m_commission_type->getList();
+		$this->_m_category_list = Util::getDropListCategory();
+		$this->_m_item_demand_status_list = Util::getDropList(__('demand_status', true));
+		$this->_m_item_demand_order_fail_reason_list = Util::getDropList(__('order_fail_reason', true));
+		$this->_m_item_commission_status_list = Util::getDropList(__('commission_status', true));
+		$this->_m_item_commission_order_fail_reason_list = Util::getDropList(__('commission_order_fail_reason', true));		
+		
+		$this->_m_item_wcontents_list = Util::getDropList(__('jbr_work_contents', true));
+		$this->_m_item_jbr_category_list = Util::getDropList(__('jbr_category', true));
+		$this->_m_item_jbr_estimate_list = Util::getDropList(__('jbr_estimate_status', true));
+		$this->_m_item_jbr_receipt_list = Util::getDropList(__('jbr_receipt_status', true));
+		$this->_m_user_list = $this->_m_user->dropDownUser();
+		$this->_m_user_list2 = $this->_m_user->dropDownUser2();
+		$this->_m_item_bill_status_list = Util::getDropList(__('bill_status',  true));
+		$this->_m_item_coordination_method_list = Util::getDropList(__('coordination_method', true));
+		$this->_m_item_prog_send_method_list = Util::getDropList(__('prog_send_method',  true));
+		$this->_m_item_bill_send_method_list = Util::getDropList(__('bill_send_method', true));
+		$this->_m_item_advertising_status_list = Util::getDropList(__('出稿型サイト状況', true));
+		$this->_m_item_payment_site_list = Util::getDropList(__('支払サイト', true));
+		//print_r($this->_m_item_payment_site_list);
+	}
+	
+	function __get($v) {
+		if (property_exists("GeneralSearch", $v)) {
+			return $this->{$v};
+		}
+		
+		return null;
+	}
+	
+	/*
+	 * DropDown用の機能ID一覧の取得
+	 */
+	public function dropDownFunctionId() {
+		$list[] = array();
+		
+		foreach ($this->_function_list as $row) {
+			if (is_array($this->_function_security_list[$row['value']])) 
+				if (!in_array($_SESSION['Auth']['User']['auth'], $this->_function_security_list[$row['value']]))
+					continue;
+			$list[] = $row;
+		}
+		
+		return $list;
+	}
+	
+	/*
+	 * テーブル名と機能IDの変換
+	 */
+	private function __convertTableNameToFunctionId($table_name) {
+		
+		foreach ($this->_function_tables as $k => $v) {
+			if (array_key_exists( $table_name, $v )) return $k;
+		}
+		
+		return null;
+	}
+	
+	/*
+	 * 機能毎のカラム名取得
+	 */
+	public function getFunctionColumnList($function_id) {
+		$result = $this->findFunctionTableColumn($function_id);
+		
+		$lists = array();
+		foreach ($result as $row) {
+			if (isset($this->_security_table_column[$row[0]['table_name'] . "_" . $row[0]['column_name']]))
+				if (!in_array($_SESSION['Auth']['User']['auth'], $this->_security_table_column[$row[0]['table_name'] . "_" . $row[0]['column_name']])) continue;
+			$lists[] = "[\"" . $row[0]['table_name'] . "." . $row[0]['column_name'] . "\",\"" . $row[0]['column_comment'] . "\"]";
+		}
+		
+		return implode(',', $lists);
+	}
+	
+	/*
+	 * CSVファイル名の取得
+	 */
+	public function getCsvFileName($function_id) {
+		$now = new DateTime();
+		return $this->_csv_file_id . $now->format('YmdHis') . ".csv";
+	}
+	
+	/*
+	 * テーブルカラム名をコメントから取得
+	 * @function_name 機能名 
+	 */
+	public function findFunctionTableColumn($function_name)
+	{
+		
+		$retColumns = array();
+		
+		foreach ($this->_function_tables[$function_name] as $key => $value) {
+			//print_r($value) . "<br>";
+        	$retColumns = array_merge($retColumns, $this->__findTableColumn($key, $value));
+		}
+		
+		return $retColumns;
+	}
+	
+	/*
+	 * 項目コメント取得用
+	 */
+	private function __findTableColumn($tableName, $columns) {
+		$param = "'" . implode('\',\'', $columns) . "'";
+			
+		$sql = <<<EOF
+select
+	psat.relname as table_name,
+	pa.attname as column_name,
+	pd.description as column_comment
+from
+	pg_stat_all_tables psat,
+	pg_description pd,
+	pg_attribute pa
+where
+	1 = 1
+	and psat.relname = '{$tableName}'
+	and pa.attname in ( $param )
+	and psat.relid = pd.objoid
+	and pd.objsubid <> 0
+	and pd.objoid = pa.attrelid
+	and pd.objsubid = pa.attnum
+order by
+	pd.objsubid
+EOF;
+		return $this->query($sql, array(), false);	
+	}
+	
+	/*
+	 * GeneralSearch検索用
+	 */
+	public function findGeneralSearch($type, $params = array()) {
+		return $this->_m_general_search->find($type, $params);
+	}
+	
+	/*
+	 * MGeneralSearch検索用(単体)
+	 */
+	public function findMGeneralSearch($type, $params = array()) {
+		$this->_m_general_search->unbindModel(array('hasMany' => array('G_S_Item', 'G_S_Condition')));
+		$hasOne = array(
+			'MUser' => array('className' => 'MUser',
+							 'foreignKey' => false,
+							 'fields' => array('user_name'),
+							 'conditions' => array('MUser.user_id = MGeneralSearch.created_user_id'))
+		);
+		$this->_m_general_search->bindModel(array('hasOne' => $hasOne));
+		return $this->_m_general_search->find($type, $params);
+	}
+	
+	/*
+	 * 
+	 */
+	public function findGeneralSearchItem($type, $params = array()) {
+		$this->_general_search_item->unbindModel(array('belongsTo' => array('MGeneralSearch')));
+		return $this->_general_search_item->find($type, $params);
+	}
+	
+	/*
+	 * 
+	 */
+	public function findGeneralSearchCondition($type, $params = array()) {
+		$this->_general_search_condition->unbindModel(array('belongsTo' => array('MGeneralSearch')));
+		return $this->_general_search_condition->find($type, $params);
+	}
+	
+	/*
+	 * GeneralSearch保存用
+	 */
+	public function saveGeneralSearch($params) {
+		$data = $this->__validateDataGeneralSearch($params);
+		$id = "";
+		if (isset($data['MGeneralSearch']['id'])) {
+			$id = $data['MGeneralSearch']['id'];
+			$this->deleteGeneralSearch($data['MGeneralSearch']['id']);
+		}		
+		$this->_m_general_search->saveAssociated($data, array());
+		if (strlen($id) === 0)
+			$id = $this->_m_general_search->getLastInsertID ();		
+		
+		return $id;
+	}
+	/*
+	 * validate
+	 */
+	private function __validateDataGeneralSearch($params) {
+		$data = array();
+		$data['MGeneralSearch'] = $this->__validateDataMGeneralSearch($params);
+		$data['G_S_Item'] = $this->__validateDataGeneralSearchItem($params);
+		$data['G_S_Condition'] = $this->__validateDataGeneralSearchCondition($params);
+		
+		return $data;
+	}
+	
+	private function __validateDataMGeneralSearch($params) {
+		$data = array();
+		if (strlen($params['MGeneralSearch']['id']) > 0) $data['id'] = $params['MGeneralSearch']['id'];
+		$data['definition_name'] = (isset($params['MGeneralSearch']['definition_name'])) ? $params['MGeneralSearch']['definition_name'] : "";
+		$data['auth_popular'] = (isset($params['MGeneralSearch']['auth_popular'])) ? 1 : 0;
+		$data['auth_admin'] = (isset($params['MGeneralSearch']['auth_admin'])) ? 1 : 0;
+		$data['auth_accounting'] = (isset($params['MGeneralSearch']['auth_accounting'])) ? 1 : 0;
+		
+		$this->_m_general_search->set($data);
+		if (! $this->_m_general_search->validates()) 
+			throw new Exception ("");
+		
+		return $data;
+	}
+	
+	private function __validateDataGeneralSearchItem($params) {
+		$datas = array();
+		
+		if ( ! isset($params['GeneralSearchItem']['item']) )
+			throw new Exception('抽出項目は1つ以上必ず選択して下さい');
+		
+		for ($i = 0; $i < count($params['GeneralSearchItem']['item']); $i++) {
+			$elems = explode('.', $params['GeneralSearchItem']['item'][$i]);
+			if (strlen($params['MGeneralSearch']['id']) > 0) $data['general_search_id'] = $params['MGeneralSearch']['id'];
+			$data['function_id'] = $this->__convertTableNameToFunctionId( $elems[0] );
+			$data['table_name'] = $elems[0];
+			$data['column_name'] = $elems[1];
+			$data['output_order'] = $i;
+			
+			$datas[] = $data;
+		}
+		
+		return $datas;
+	}
+	
+	private function __validateDataGeneralSearchCondition($params) {
+		
+		$datas = array();
+		foreach ($params['GeneralSearchCondition'] as $condition_expression => $val) {
+			foreach ($val as $k => $v) {
+				$e = $v;
+				if ($condition_expression == 2)
+					$e = ($v[0] !== "" || $v[1] !== "") ? implode('^', $v) : "";
+				if ($condition_expression == 3)
+					$e = (is_array($v)) ? implode('^', $v) : "";
+				if ($condition_expression == 4)
+					$e = (is_array($v)) ? implode('^', $v) : "";
+				if ($condition_expression == 9) {
+					if ($k == 'm_target_areas-jis_cd') {
+						$e = (is_array($v)) ? implode('^', $v) : "";
+					}
+				}
+				//echo $condition_expression . " " . $k . "(";
+				//print_r($e);
+				//echo ")<br>";
+				if (strlen($e) > 0) {
+					list($table_name, $column_name) = explode('-', $k);
+					if (strlen($params['MGeneralSearch']['id']) > 0) $data['general_search_id'] = $params['MGeneralSearch']['id'];
+					$data['table_name'] = $table_name;
+					$data['column_name'] = $column_name;
+					$data['condition_expression'] = $condition_expression;
+					$data['condition_value'] = $e;
+					$data['condition_type'] = 0;
+
+					$datas[] = $data;
+				}
+			}			
+		}
+		/*
+		echo "---<br>";
+		print_r($datas);
+		echo "---<br>";
+		*/
+		return $datas;
+	}
+	
+	/*
+	 * GeneralSearchHistory保存用
+	*/
+	public function saveGeneralSearchHistory($id, $file_name) {
+		try {
+		$sql = $this->__buildQuery($id, $params);
+		$sql_param =  Sanitize::escape($sql, "default"); //. "(" . implode(',', $params) . ")";
+
+		$data = array('GeneralSearchHistory' => array(
+							'general_search_id' => $id,
+							'output_file_name' => $file_name,
+							'query' => $sql_param)
+				);
+		
+		$this->_general_search_history->save($data, array());
+		} catch (Exception $e) {
+			echo $e->getMessage();
+			die();
+		}
+		return "";// $this->_general_search_history->save($data, array());
+	}
+
+	/*
+	 * GeneralSearch削除用
+	*/
+	public function deleteGeneralSearch($id) {
+		return $this->_m_general_search->delete($id,  true);
+	}
+	
+	/*
+	 * 総合検索結果出力用
+	 */
+	public function findGeneralSearchToCsv($id, $function_id, $limit = 0 ) {
+		$this->__setCsvFormat($id);
+
+		$sql = $this->__buildQuery($id, $params, $limit);
+				
+		$result = $this->query($sql, $params, false);
+		/*
+		print_r($result);
+		die();
+		*/
+		$csv_datas = array();
+		foreach ($result as $rrow) {
+			$csv_datas_row = array();
+			foreach ($rrow[0] as $key => $value) {
+				if ( array_key_exists($key, $this->_transfer_reference_table)) {
+					$value = $this->{$this->_transfer_reference_table[$key]['v']}[$value];
+					//if (strlen($value) == 0) $value = "-";
+				}
+				$csv_datas_row[] = $value;
+			}
+			$csv_datas[] = $csv_datas_row;
+		}		
+		//print_r($csv_datas);
+		return $csv_datas;
+	}
+	
+	private function __setCsvFormat($id) {
+		$result = $this->findGeneralSearchItem('all', array('conditions' => array('general_search_id =' . $id)));	
+
+		$this->csvFormat['default'] = array();
+		foreach ($result as $elem) {
+			$comments = $this->__findTableColumn($elem['GeneralSearchItem']['table_name'], array($elem['GeneralSearchItem']['column_name']));
+			$this->csvFormat['default'][] = $comments[0][0]['column_comment'];			
+		}
+	}
+	
+	/*
+	 *  MGeneralSearch、GeneralSearchItems、GeneralSearchConditionsからqueryを作成
+	 */
+	private function __buildQuery($id, &$params, $limit = 0) {
+		$result = $this->findGeneralSearch('all', array('conditions' => array('id =' . $id)));
+		if (count($result) == 0) return "";
+
+		$table_deep = 0;
+		
+		$columns = array();
+		foreach ($result[0]['G_S_Item'] as $item) {
+			$columns[] = $item['table_name'] . "." . $item['column_name'] . " as " . $item['table_name'] . "_" . $item['column_name'];
+			$table_deep = (array_search($item['table_name'], $this->_function_tables_join_order) > $table_deep) ? 
+								array_search($item['table_name'], $this->_function_tables_join_order) : $table_deep;
+		}
+		
+		$wheres = array('1 = 1');
+		$params = array();
+		foreach ($result[0]['G_S_Condition'] as $cond) {
+			if ($cond['condition_expression'] === 0) {
+				$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " = ?";
+				$params[] = $cond['condition_value'];
+			}
+			if ($cond['condition_expression'] === 1) {
+				$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " like '%" . $cond['condition_value'] . "%'";
+			}			
+			if ($cond['condition_expression'] === 2) {
+				$sp_val = explode('^', $cond['condition_value']);
+				$where = "";
+				if (strlen($sp_val[0]) > 0) {
+					$where .= $cond['table_name'] . "." . $cond['column_name'] . " >= ? ";			
+					$params[] = $sp_val[0];
+				}
+				if (strlen($sp_val[1]) > 0) {
+					if (strlen( $where ) > 0) $where .= " and ";
+					$where .= $cond['table_name'] . "." . $cond['column_name'] . " <= ?";
+					$params[] = $sp_val[1];
+				}
+				$wheres[] = "(" . $where . ")";
+			}
+			if ($cond['condition_expression'] === 3) {
+				//$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " in (" . implode(',', explode('^', $cond['condition_value'])) . ")";
+				$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " in (" . implode(',', explode('^', $cond['condition_value'])) . ")";
+			}
+			if ($cond['condition_expression'] === 4) {
+				//$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " in (" . implode(',', explode('^', $cond['condition_value'])) . ")";
+				$wheres[] = $cond['table_name'] . "." . $cond['column_name'] . " in ('" . implode("','", explode('^', $cond['condition_value'])) .  "')";
+			}
+			if ($cond['condition_expression'] === 9) {
+				if ($cond['table_name'] . "." . $cond['column_name'] == 'demand_infos.customer_tel') {
+					$wheres[] = '(demand_infos.customer_tel = \'' . $cond['condition_value'] . '\' or demand_infos.tel1 = \'' . $cond['condition_value'] . '\')';
+				}
+				if ($cond['table_name'] . "." . $cond['column_name'] == 'm_corps.tel1') {
+					$wheres[] = '(m_corps.commission_dial = \'' . $cond['condition_value'] . '\' or m_corps.tel1 = \'' . $cond['condition_value'] . '\' or m_corps.tel2 = \'' . $cond['condition_value'] . '\')';
+				}
+				if ($cond['table_name'] . "." . $cond['column_name'] == 'm_corps-free_text') {
+					$wheres[] = '(m_corps.note like \'%' . $cond['condition_value'] . '%\' or affiliation_infos.attention like \'%' . $cond['condition_value'] . '%\')';
+					$table_deep = ($table_deep < array_search('affiliation_infos' ,$this->_function_tables_join_order)) ? array_search('affiliation_infos' ,$this->_function_tables_join_order) : $table_deep;
+				}
+				if ($cond['table_name'] . "." . $cond['column_name'] == 'mony_corresponds.nominee') {
+					$wheres[] = "m_corps.corp_id in (select corp_id from money_corresponds where nominee LIKE \'%)" . $cond['condition_value'] . "%\'";
+				}
+				if ($cond['table_name'] . "." . $cond['column_name'] == 'm_target_areas.jis_cd') {
+					$wheres[] = "substring(m_target_areas.jis_cd, 1, 2)::integer in (" . implode(',', explode('^', $cond['condition_value'])) . ")";
+					$table_deep = ($table_deep < array_search('m_target_areas' ,$this->_function_tables_join_order)) ? array_search('m_target_areas' ,$this->_function_tables_join_order) : $table_deep;
+				}
+			}
+			$table_deep = (array_search($cond['table_name'], $this->_function_tables_join_order) > $table_deep) ?
+							array_search($cond['table_name'], $this->_function_tables_join_order) : $table_deep;
+		}
+
+		$from_table = "demand_infos ";
+		for ($i = 1; $i < $table_deep + 1; $i++) {
+			$from_table .= " left join " . $this->_function_tables_join_order[$i] . " ON " . 
+							$this->_function_tables_join_rule[$this->_function_tables_join_order[$i]]['cond'];
+		}
+		
+		$query = "select " . implode(',', $columns) . " from " . $from_table . " where " . implode(' and ', $wheres) . (($limit > 0) ? " limit " . $limit : "");
+		
+		return $query;	
+	}
+	
+	public function isEnabledDisplayBillInfo() {
+		if ($_SESSION['Auth']['User']['auth'] == 'system') return true;
+		if ($_SESSION['Auth']['User']['auth'] == 'accounting') return true;
+		
+		return false;
+	}
+	
+	public function isEnabledDisplaySaveAndDel() {
+		if ($_SESSION['Auth']['User']['auth'] == 'popular') return false;
+
+		return true;
+	}
+	
+	public function getCsvPreview($id) {
+		//TODO:条件表示部分の作成
+		$conditions = $this->__getCsvPreviewCondition($id);
+		//TODO:ヘッダ部分の作成
+		$table_headers =  $this->__getCsvPreviewHeader($id);
+		//TODO:データメイン部の作成(最大100件)
+		$table_data = $this->__getCsvPreviewData($id);
+		
+		return array('conditions' => $conditions, 'headers' => $table_headers, 'datas' => $table_data);
+	}
+
+	private function __getCsvPreviewCondition($id) {
+		$result = $this->findGeneralSearchCondition('all', array('conditions' => array('general_search_id =' . $id)));
+	
+		$conditions = array();
+		
+		foreach ($result as $elem) {
+			$comments = $this->__findTableColumn($elem['GeneralSearchCondition']['table_name'], array($elem['GeneralSearchCondition']['column_name']));
+			$conditions[] = array('title' => $comments[0][0]['column_comment'], 'value' => $elem['GeneralSearchCondition']['condition_value']);
+		}
+		
+		return $conditions;
+	}
+	
+	private function __getCsvPreviewHeader($id) {
+		$result = $this->findGeneralSearchItem('all', array('conditions' => array('general_search_id =' . $id)));
+		
+		$headers = array();
+		
+		foreach ($result as $elem) {
+			$comments = $this->__findTableColumn($elem['GeneralSearchItem']['table_name'], array($elem['GeneralSearchItem']['column_name']));
+			$headers[] = array($comments[0][0]['column_comment']);			
+		}
+		
+		return $headers;
+	}
+	
+	private function __getCsvPreviewData($id) {
+		return $this->findGeneralSearchToCsv($id, null, 100 );
+	}
+}

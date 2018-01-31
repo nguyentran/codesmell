@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:42:29+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\AutoCommissionSelectComponent.php">
+    <violation beginline="28" endline="40" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The method get_auto_commission_info is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The parameter $genre_id is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The parameter $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The parameter $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $corp_list is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $corp_list is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $corp_list_new is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $corp_list is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="40" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="get_auto_commission_info" priority="1">
+      The variable $corp_list_new is not named in camelCase.
+    </violation>
+    <violation beginline="28" endline="28" rule="UnusedFormalParameter" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedformalparameter" priority="3">
+      Avoid unused parameters such as '$genre_id'.
+    </violation>
+    <violation beginline="50" endline="222" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="3">
+      The method __get_corp_list() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="50" endline="222" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="3">
+      The method __get_corp_list() has 173 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The method __get_corp_list is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The parameter $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The parameter $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The parameter $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $fields_commission_unit_price is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $fields_commission_unit_price is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $category_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $jis_cd is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $exclude_corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $exclude_corp_array is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $rank_f is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $rank_f is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $rank_f is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $rank_f is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="50" endline="222" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="AutoCommissionSelectComponent" method="__get_corp_list" priority="1">
+      The variable $m_corps is not named in camelCase.
+    </violation>
+    <violation beginline="60" endline="60" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $fields_commission_unit_price. Keep variable name length under 20.
+    </violation>
+    <violation beginline="176" endline="176" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$data'.
+    </violation>
+    <violation beginline="177" endline="177" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $v. Configured minimum length is 3.
+    </violation>
+  </file>
+</pmd>

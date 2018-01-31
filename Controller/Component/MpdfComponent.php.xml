@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:44:00+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\MpdfComponent.php">
+    <violation beginline="7" endline="120" rule="CamelCasePropertyName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="MpdfComponent" priority="1">
+      The property $_configuration is not named in camelCase.
+    </violation>
+    <violation beginline="7" endline="120" rule="CamelCasePropertyName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="MpdfComponent" priority="1">
+      The property $_init is not named in camelCase.
+    </violation>
+    <violation beginline="7" endline="120" rule="CamelCasePropertyName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="MpdfComponent" priority="1">
+      The property $_filename is not named in camelCase.
+    </violation>
+    <violation beginline="7" endline="120" rule="CamelCasePropertyName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="MpdfComponent" priority="1">
+      The property $_output is not named in camelCase.
+    </violation>
+    <violation beginline="65" endline="65" rule="ShortVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#shortvariable" priority="3">
+      Avoid variables with short names like $c. Configured minimum length is 3.
+    </violation>
+  </file>
+</pmd>

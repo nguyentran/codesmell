@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2018-01-31T02:44:15+00:00">
+  <file name="C:\AppServ\www\rits\app\Controller\Component\PDFComponent.php">
+    <violation beginline="24" endline="262" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="PDFComponent" method="commission" priority="3">
+      The method commission() has a Cyclomatic Complexity of 14. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="24" endline="262" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="PDFComponent" method="commission" priority="3">
+      The method commission() has 239 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $commission_note_send_datetime is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $customer_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $complete_date is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $commission_status is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $commission_note_send_datetime is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $demand_id is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $customer_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $complete_date is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $commission_status is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $all_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $page_cnt is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $make_file is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $make_file is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $official_corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="24" endline="262" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="commission" priority="1">
+      The variable $make_file is not named in camelCase.
+    </violation>
+    <violation beginline="153" endline="153" rule="LongVariable" ruleset="Naming Rules" externalInfoUrl="http://phpmd.org/rules/naming.html#longvariable" priority="3">
+      Avoid excessively long variable names like $commission_note_send_datetime. Keep variable name length under 20.
+    </violation>
+    <violation beginline="256" endline="256" rule="ExitExpression" ruleset="Design Rules" externalInfoUrl="http://phpmd.org/rules/design.html#exitexpression" priority="1">
+      The method commission() contains an exit expression.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The method __edit_string_display is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The parameter $split_len is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $split_len is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $split_len is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $split_len is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $split_len is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $edit_str is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $edit_str is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $edit_str is not named in camelCase.
+    </violation>
+    <violation beginline="272" endline="297" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="__edit_string_display" priority="1">
+      The variable $edit_str is not named in camelCase.
+    </violation>
+    <violation beginline="304" endline="370" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="setPageHeader" priority="1">
+      The variable $Request is not named in camelCase.
+    </violation>
+    <violation beginline="304" endline="370" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="setPageHeader" priority="1">
+      The variable $Request is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="PDFComponent" method="agreement_terms" priority="3">
+      The method agreement_terms() has 163 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseMethodName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The method agreement_terms is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The parameter $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseParameterName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The parameter $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_id is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $org_terms is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $cst_terms is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $to_enc is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $from_enc is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $pdf_title is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $title_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $item_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $frame_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $sentense_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $tmp_date is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_data is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $tmp_arr is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $tmp_date is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_date is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $tmp_arr is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $tmp_arr is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $outline_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_id is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $agreement_date is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $item_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $item_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $frame_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $sentense_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $frame_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $sentense_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_table_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $title_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_style is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $terms_table is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $outline_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $org_terms is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $cst_terms is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_titles is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_titles is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_titles is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_table is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_table_tmpl is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_titles is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $terms_table is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_table is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $diff_table is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $corp_id is not named in camelCase.
+    </violation>
+    <violation beginline="422" endline="584" rule="CamelCaseVariableName" ruleset="Controversial Rules" package="+global" externalInfoUrl="#" class="PDFComponent" method="agreement_terms" priority="1">
+      The variable $file_name is not named in camelCase.
+    </violation>
+    <violation beginline="435" endline="435" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$to_enc'.
+    </violation>
+    <violation beginline="436" endline="436" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$from_enc'.
+    </violation>
+    <violation beginline="437" endline="437" rule="UnusedLocalVariable" ruleset="Unused Code Rules" externalInfoUrl="http://phpmd.org/rules/unusedcode.html#unusedlocalvariable" priority="3">
+      Avoid unused local variables such as '$pdf_title'.
+    </violation>
+    <violation beginline="577" endline="577" rule="ExitExpression" ruleset="Design Rules" externalInfoUrl="http://phpmd.org/rules/design.html#exitexpression" priority="1">
+      The method agreement_terms() contains an exit expression.
+    </violation>
+  </file>
+</pmd>
